@@ -6,7 +6,7 @@ package com.example.designpatterns.Decorator;
  */
 public class MainClass {
     public static void main(String[] args) { // 先创建一个要被装饰的普通沙发对象
-        Sofa sofa = new CommonSofa();
+        Sofa sofa = new SofaDecorator(new CommonSofa());
         System.out.println("**********普通沙发功能如下：***********");
         sofa.show();
         System.out.println(); // 用BedDecorator对创建好的普通沙发对象进行装饰，为其增加睡觉功能
