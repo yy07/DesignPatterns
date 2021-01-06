@@ -1,4 +1,4 @@
-package com.example.designpatterns.bridging.bridging1;
+package com.example.designpatterns.bridging.bridging2;
 
 /**
  * @Author:jinboxaing
