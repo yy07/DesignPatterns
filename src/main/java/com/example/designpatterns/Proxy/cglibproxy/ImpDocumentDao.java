@@ -2,7 +2,10 @@ package com.example.designpatterns.Proxy.cglibproxy;
 
 public class ImpDocumentDao implements DocumentDao {
     @Override
-    public String add(Document document) {
+    /**
+     * 添加final修饰可以使这个方法不能被代理
+     */
+    public final String add(Document document) {
         User user = DataBase.getDataBaseInstance().getCurrentUser();
         if (null == user) {
             // 若当前用户未登陆，则新增文档失败...
